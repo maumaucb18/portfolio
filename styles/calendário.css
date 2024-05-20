@@ -1,0 +1,171 @@
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #007bff, #007bff, #00bfff, #00ffea);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+div.horario-disp {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+div.horario-disp a.consult button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+div.horario-disp a.consult button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para o formulário */
+form {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="date"],
+form input[type="time"],
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+a.consult button {
+}
+a.consult {
+}
+
+/* Estilo para a mensagem de alerta */
+#customAlert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#alertMessage {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#closeAlert {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#closeAlert:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a caixa de mensagem personalizada */
+#customAlert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.alertContent {
+  text-align: center;
+}
+
+#closeAlert {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#closeAlert:hover {
+  background-color: #0056b3;
+}
+
+/*  fim Estilos para a caixa de mensagem personalizada */
+
+
+
+/* Estilos para os horários disponíveis */
+#scheduleList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#scheduleList li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#scheduleList li.highlight {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#scheduleList li.selected {
+  background-color: #0056b3;;
+}
+
